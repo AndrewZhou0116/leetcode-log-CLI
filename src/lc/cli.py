@@ -15,7 +15,7 @@ from .history import fetch_history
 from .stats import compute_stats
 
 from .open_cmd import open_problem
-
+from .config import config_get, config_set, ALLOWED
 
 
 app = typer.Typer(help="LeetCode SRS CLI (Plan+Cursor+SRS)")
@@ -183,6 +183,25 @@ def open(
     """Open LeetCode page for current NEW (or a specific lc_num)."""
     url = open_problem(db, lc_num=lc_num)
     rprint(f"[dim]{url}[/dim]")
+config_app = typer.Typer(help="Read/write config (meta table)")
+app.add_typer(config_app, name="config")
+
+@config_app.command("get")
+def config_get_cmd(
+    key: str = typer.Argument(..., help="Config key"),
+    db: Path = typer.Option(DEFAULT_DB_PATH, "--db", help="Path to sqlite db file"),
+):
+    v = config_get(db, key)
+    rprint(f"{key}={v}")
+
+@config_app.command("set")
+def config_set_cmd(
+    key: str = typer.Argument(..., help=f"Config key ({', '.join(ALLOWED.keys())})"),
+    value: str = typer.Argument(..., help="Config value"),
+    db: Path = typer.Option(DEFAULT_DB_PATH, "--db", help="Path to sqlite db file"),
+):
+    config_set(db, key, value)
+    rprint(f"[bold cyan]OK[/bold cyan] {key}={value}")
 
 
 def main():
