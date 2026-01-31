@@ -16,8 +16,7 @@ Phase 0：数组 / 字符串基础
 
 242 Valid Anagram
 
-【+】271 Encode and Decode Strings (LC 271 Premium；不做也行，但“字符串序列化/反序列化”模板很值)
-
+【+】271 Encode and Decode Strings 
 Phase 1：哈希表 / 集合
 
 217 Contains Duplicate
@@ -132,7 +131,7 @@ Phase 4：二分（数组二分 + 答案二分）
 
 【+】981 Time Based Key-Value Store
 
-【+】4 Median of Two Sorted Arrays（硬，但很经典；可以最后做）
+【+】4 Median of Two Sorted Arrays
 
 Phase 5：排序 / 区间
 
@@ -160,9 +159,9 @@ Phase 5：排序 / 区间
 
 【+】253 Meeting Rooms II
 
-【+】1851 Minimum Interval to Include Each Query（偏难，放后面）
+【+】1851 Minimum Interval to Include Each Query
 
-Phase 6：链表 + 设计（把 NeetCode 的高频都补齐）
+Phase 6：链表 + 设计
 
 206 Reverse Linked List
 
@@ -184,13 +183,13 @@ Phase 6：链表 + 设计（把 NeetCode 的高频都补齐）
 
 【+】2 Add Two Numbers
 
-【+】146 LRU Cache（设计题必刷）
+【+】146 LRU Cache
 
-【+】25 Reverse Nodes in k-Group（硬但高频）
+【+】25 Reverse Nodes in k-Group
 
-【+】287 Find the Duplicate Number（龟兔赛跑模板，NeetCode 放在链表专题）
+【+】287 Find the Duplicate Number
 
-Phase 7：树 / DFS / BFS（补齐 NeetCode 150 的硬题）
+Phase 7：树 / DFS / BFS
 
 基础遍历
 
@@ -222,9 +221,9 @@ Phase 7：树 / DFS / BFS（补齐 NeetCode 150 的硬题）
 
 【+】1448 Count Good Nodes in Binary Tree
 
-【+】124 Binary Tree Maximum Path Sum（硬但非常值）
+【+】124 Binary Tree Maximum Path Sum
 
-【+】297 Serialize and Deserialize Binary Tree（硬但很值）
+【+】297 Serialize and Deserialize Binary Tree
 
 BST / LCA
 
@@ -234,9 +233,9 @@ BST / LCA
 
 【+】230 Kth Smallest Element in a BST
 
-【+】235 Lowest Common Ancestor of a BST（也很常见）
+【+】235 Lowest Common Ancestor of a BST
 
-Phase 8：堆 / 优先队列（补齐 NeetCode 的标准项）
+Phase 8：堆 / 优先队列
 
 215 Kth Largest Element in an Array
 
@@ -253,9 +252,9 @@ Phase 8：堆 / 优先队列（补齐 NeetCode 的标准项）
 
 【+】1046 Last Stone Weight
 
-【+】355 Design Twitter（设计 + 堆/哈希综合，难度适中但很有代表性）
+【+】355 Design Twitter
 
-Phase 9：图 / BFS / DFS / 拓扑 / 并查集（补齐缺口与高频）
+Phase 9：图 / BFS / DFS / 拓扑 / 并查集
 
 BFS/DFS 网格
 
@@ -269,7 +268,7 @@ BFS/DFS 网格
 
 【+】130 Surrounded Regions
 
-【+】286 Walls and Gates (Premium；不做可跳)
+【+】286 Walls and Gates 
 
 图遍历/拓扑
 
@@ -281,7 +280,7 @@ BFS/DFS 网格
 
 417 Pacific Atlantic Water Flow
 
-【+】127 Word Ladder（BFS 经典）
+【+】127 Word Ladder
 
 【+】261 Graph Valid Tree (Premium；不做可跳)
 
@@ -297,7 +296,7 @@ BFS/DFS 网格
 
 1319 Number of Operations to Make Network Connected
 
-Advanced Graphs（建议独立出来）
+Advanced Graph:
 
 【+】332 Reconstruct Itinerary
 
@@ -311,7 +310,7 @@ Advanced Graphs（建议独立出来）
 
 【+】787 Cheapest Flights Within K Stops
 
-Phase 10：贪心（补齐 NeetCode 150）
+Phase 10：贪心
 
 53 Maximum Subarray
 
@@ -331,7 +330,7 @@ Phase 10：贪心（补齐 NeetCode 150）
 
 【+】678 Valid Parenthesis String
 
-Phase 11：DP（分成 1D + 2D，补齐 NeetCode 150 的核心）
+Phase 11：DP
 
 1D / 状态转移
 
@@ -361,7 +360,7 @@ Phase 11：DP（分成 1D + 2D，补齐 NeetCode 150 的核心）
 
 【+】5 Longest Palindromic Substring
 
-网格 / 2D DP（NeetCode 150 的“含金量区”）
+网格 / 2D DP
 
 62 Unique Paths
 
@@ -387,7 +386,7 @@ Phase 11：DP（分成 1D + 2D，补齐 NeetCode 150 的核心）
 
 【+】312 Burst Balloons
 
-【+】10 Regular Expression Matching（非常硬，最后做）
+【+】10 Regular Expression Matching
 
 Phase 12：回溯（补齐 NeetCode 150）
 
@@ -413,7 +412,7 @@ Phase 12：回溯（补齐 NeetCode 150）
 
 【+】51 N-Queens
 
-Phase 13：Trie（你原题单缺失，但 NeetCode 150 必补）
+Phase 13：Trie
 
 【+】208 Implement Trie (Prefix Tree)
 
@@ -421,7 +420,7 @@ Phase 13：Trie（你原题单缺失，但 NeetCode 150 必补）
 
 【+】212 Word Search II
 
-Phase 14：Math & Geometry（NeetCode 150 有价值的补齐）
+Phase 14：Math & Geometry
 
 【+】48 Rotate Image
 
@@ -437,7 +436,7 @@ Phase 14：Math & Geometry（NeetCode 150 有价值的补齐）
 
 【+】2013 Detect Squares
 
-Phase 15：Bit Manipulation（NeetCode 150 有价值的补齐）
+Phase 15：Bit Manipulation
 
 【+】191 Number of 1 Bits
 
