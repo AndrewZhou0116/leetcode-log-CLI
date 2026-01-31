@@ -12,9 +12,9 @@ from rich.table import Table
 from rich.console import Console
 
 from .history import fetch_history
+from .stats import compute_stats
 
-
-
+from .open_cmd import open_problem
 
 
 
@@ -162,6 +162,28 @@ def history(
         table.add_row(*row)
 
     Console().print(table)
+
+@app.command()
+def stats(db: Path = typer.Option(DEFAULT_DB_PATH, "--db", help="Path to sqlite db file")):
+    """Show key SRS stats."""
+    s = compute_stats(db)
+
+    rprint("[bold]STATS[/bold]")
+    rprint(f"Cursor: plan_order={s.cursor_plan_order}  lc={s.cursor_lc_num}  {s.cursor_title or ''}")
+    rprint(f"Problems: {s.problems_total}")
+    rprint(f"Reviews:  total={s.reviews_total}  active={s.active_total}  retired={s.retired_total}")
+    rprint(f"Due now:  {s.due_total}")
+    rprint(f"Activity: today={s.logs_today}  last7d={s.logs_7d}")
+
+@app.command()
+def open(
+    lc_num: int | None = typer.Argument(None, help="Optional LeetCode number (default: current NEW)"),
+    db: Path = typer.Option(DEFAULT_DB_PATH, "--db", help="Path to sqlite db file"),
+):
+    """Open LeetCode page for current NEW (or a specific lc_num)."""
+    url = open_problem(db, lc_num=lc_num)
+    rprint(f"[dim]{url}[/dim]")
+
 
 def main():
     app()
